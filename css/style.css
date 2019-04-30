@@ -1,4 +1,52 @@
+*, *::after,*::before{
+    box-sizing: border-box;
+}
+
 body{
-    background-color: gray; 
-    color: white; 
+    height: 100vh;
+    background-color: darkgray; 
+    color: whitesmoke; 
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+
+
+}
+
+h1, h3{
+    text-align: center; 
+
+
+}
+
+section{
+    display: grid; 
+    grid-template-columns: repeat(7, 10vmin);
+    grid-template-rows: repeat(6,10vmin);
+    grid-gap: 1vmin; 
+
+}
+
+section div{
+    border-radius: 50%; 
+    border: 1px solid whitesmoke;
+
+
+
+}
+#col-markers {
+    display: grid; 
+    grid-template-columns: repeat(7, 10vmin);
+    grid-template-rows: 10vmin; 
+    grid-gap: 1vmin; 
+}
+#col-markers div{
+    border-top: 5vmin solid rosybrown; 
+    border-left: 5vmin solid transparent;
+    border-right: 5vmin solid transparent;
+
+
 }
